@@ -1,20 +1,39 @@
+<?php
+error_reporting(1);
+//session_start();
+//include "session.php";
+//var_dump($usr);
 
+
+
+?>
+
+
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
 
-	<title>Insurance - HTML5 Template for Insurance Agency</title>
+	<title>Insurance - HTML5 Template for SARVAH TECHNOLOGY SOLUTIONS</title>
 
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700" />
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_libs/font-awesome/css/font-awesome.css" /> 
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_libs/no-ui-slider/jquery.nouislider.css" />
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_libs/animate.css" /> 
-	<link rel="stylesheet" type="text/css" href="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_css/style4.css" />  
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_css/style15.css" />  
 
 </head>
 <body>
+
+    
+<script>
+
+
+  
+</script>
+
 
 	<div id="loader">
 
@@ -22,15 +41,18 @@
 		</div>
 
 	</div>
-
+<span id='userid1'></span>
 	<div id="contact-popup">
 
 		<div id="contact-popup-background">
 		</div>
 
 		<div id="contact-popup-content" class="animated speed">
+		<div id="contact-popup-close"><i class="fa fa-times"></i></div>
 
-			<div id="contact-popup-close"><i class="fa fa-times"></i></div>
+			<div id="contact-popup-closMotore"><i class="fa fa-times"></i></div>
+
+
 
 			<div id="google-map" data-lat="37.42565" data-lng="-122.13535" data-zoom-level="12">
 			</div>
@@ -40,7 +62,7 @@
 				<i class="fa fa-envelope-o background-icon"></i>
 
 				<h3>Contact us</h3>
-				<h3 class="right">(+123) 456 789 000</h3>
+				<h3 class="right">+971 4333 8248</h3>
 
 				<h2>Send us an <span>email!</span></h2>
 				<form method="post" class="form">
@@ -72,7 +94,147 @@
 
 		</div>
 
-	</div>  
+	</div> 
+	<!-- client page-->
+    <div id="client-popup">
+
+		<div id="client-popup-background">
+		</div>
+
+		<div id="client-popup-content" class="animated speed">
+
+			<div id="client-popup-close"><i class="fa fa-times"></i></div>
+
+		<!--	<ul id="client-popup-tabs">
+
+			
+				<li data-client-tab-for="car-insurance">client/Sign Up</li>
+				
+
+			</ul>-->
+
+
+			<div class="client-forms">
+            	<div class="client-form" data-client-form-for="car-insurance">
+				
+                     
+					<i class="fa fa-car background-icon"></i>
+
+					<div class="client-form-background" style="background-image: url( '_assets/_img/image.png' ); width: 166px;">
+					</div>
+
+					<div class="client-form-content">
+
+						<h2>client<span>Board</span></h2>
+						<div class="form" id='Div1'>
+
+                        
+
+							
+
+							
+
+
+							
+							<div style="width: 100%; margin-top: -10px;">
+								<div style="width: 25%; float: left;">
+                                <div style="padding: 10px; padding-left:61px;">
+     		<div style=" border-right: 1px solid #eee; margin-right: 10px; ">
+							<img class="passport" src="uploads/no-image.jpg" width="50%" style="padding-bottom:50px;"/>
+							<input type='file' id='photofile'/> 
+							
+    		<span class="custom-checkbox left">
+								<h5>Name:<span id='cname'></span></h5>
+								
+							</span>
+                            <span class="custom-checkbox left">
+								<h5>Email:<span id='cemail'></span></h5>
+								
+							</span>
+                            <span class="custom-checkbox left">
+								<h5>REF:<span id='dob'></span></h5>
+							
+							</span>
+							<span class="custom-dropdown">
+
+								<select id="custref" style="padding-left:5px;width:100px" name="Reference" class="custom-dropdown-select quote-form-element">
+<option value="">Select</option>
+									
+								
+								
+								</select>
+
+							</span>
+						
+							</div>	
+									</div>	
+									
+								</div>
+								<div style="width: 65%; float: left;padding-left:25px;">
+									<span class="custom-checkbox">
+								<h5>Company</h5>
+								<input type="text" class="client-form-element client-form-client-name"  placeholder="Email ID...">
+							</span>
+                            		<span class="custom-checkbox">
+								<h5>Vehicle Type</h5>
+								<input type="text" class="client-form-element client-form-client-name"  placeholder="Vehicle Type...">
+							</span>
+									<span class="custom-checkbox">
+								<h5>Status</h5>
+								<input type="text" class="client-form-element client-form-client-name"  placeholder="Status...">
+							</span>
+                           
+									<span class="custom-checkbox">
+								<h5>Documents</h5>
+								<a  id='doc1'style="color:green" href="uploads/" download></a>
+								<a  id='doc2'style="color:green" href="uploads/" download></a>
+								<a  id='doc3'style="color:green" href="uploads/" download></a>
+								<span id='docs'>
+								<!--a  id='doc1'style="color:green" href="uploads/" download></a>
+								<a  id='doc2'style="color:green" href="uploads/" download></a>
+								<a  id='doc3'style="color:green" href="uploads/" download></a-->
+								</span>
+								
+                                      
+							</span>
+                            
+							
+							<!--	<button class="button button-navy-blue send-client addDocument" style="float:left;position:absolute;top:188px; " type="button" >Add Document <i class="fa fa-user-plus"></i></button>
+					<button  class="button button-navy-blue send-client" style="float:left;position:absolute;top:188px;right:390px"  type="button" style="margin: 0 auto;">SUBMIT <i class="fa fa-paper-plane-o"></i></button>
+							-->
+                            </div>
+								</div>	
+							</div>
+                     
+
+
+							
+
+							<div class="client-form-thanks">
+
+								<div class="client-form-thanks-content">
+
+									Your insurance quote has been sent successfully. 
+									<span class="client-form-thanks-close">Close this notice.</span>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				
+
+
+			</div>
+
+
+		</div> 
+	
 
 	<div id="quote-popup">
 
@@ -88,26 +250,61 @@
 				<!-- <li data-quote-tab-for="travel-insurance">Travel insurance</li> -->
 				<li data-quote-tab-for="car-insurance">Car insurance</li>
 				<li data-quote-tab-for="health-insurance">Health insurance</li>
-                <li data-quote-tab-for="send-mail">Health insurance</li>
-				<!-- <li data-quote-tab-for="house-insurance">House insurance</li> -->
+				<li data-quote-tab-for="contact-us-form" id="contactus" data-action="show-contact-popup" >Contact Us</li>
+			
+				
+				<li data-quote-tab-for="upload-documents" class="send-qoute-next" style="opacity: 0;">Upload Documents</li>
 
 			</ul>
 
-
 			<div class="quote-forms">
-            	<div class="quote-form" data-quote-form-for="car-insurance">
+
+
+				<!-- car insurance -->
+				<div class="quote-form" data-quote-form-for="car-insurance">
 
 					<i class="fa fa-car background-icon"></i>
 
-					<div class="quote-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' ); width: 166px;">
+					<div class="quote-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/stock-img1.jpg' ); width: 166px; background-position-x: 53%">
 					</div>
-
+<form id="insureform">
 					<div class="quote-form-content">
 
 						<h2>Car Insurance <span>Quote</span></h2>
 						<div class="form">
 
 
+							<span class="custom-checkbox" >
+								
+								<input id='cname'  type="text" style="width:173px;margin-right: -1px;height:35px ;margin: 4px -1px 10px 1px; ;margin: 4px -1px 10px 1px;;margin: 4px -1px 10px 1px;" class="custom-dropdown-select quote-form-element" name="fullname" placeholder="Full Name..." />
+							</span>
+
+							<!-- <input type="date" name="dob"> -->
+							
+
+							
+
+							<span class="custom-checkbox" >
+								
+								<input id='cemail' type="email" style="width:173px;margin-right: -1px;height:35px ;margin: 4px -1px 10px 1px; ;margin: 4px -1px 10px 1px;;margin: 4px -1px 10px 1px;" class="custom-dropdown-select quote-form-element" name="emailaddress" placeholder="Email ID..." />
+							</span>
+
+
+							<span class="custom-checkbox" >
+								
+								<input id='mobileno' type="number" style="width:173px;margin-right: -1px;height:35px ;margin: 4px -1px 10px 1px; ;margin: 4px -1px 10px 1px;" class="custom-dropdown-select quote-form-element"  placeholder="Mobile Number..." />
+							</span>
+							<span class="custom-dropdown">
+
+								<select name="Driving License" class="custom-dropdown-select quote-form-element">
+
+									<option value="-">Age</option>
+									<option value="lessthan6mon">Less than 25 years</option>
+									<option value="lessthan1">More than 25 years</option>
+								
+								</select>
+
+							</span>
 							<span class="custom-dropdown">
 
 								<select name="Vehicle Type" class="custom-dropdown-select quote-form-element">
@@ -126,6 +323,7 @@
 								<select name="Registration year" class="custom-dropdown-select quote-form-element">
 
 									<option value="-">Registration year</option>
+									<option value="2016">2015</option>
 									<option value="2015">2015</option>
 									<option value="2014">2014</option>
 									<option value="2013">2013</option>
@@ -213,7 +411,7 @@
 
 							<span class="custom-dropdown">
 
-								<select name="EMIRATE OF REGISTRATION" class="custom-dropdown-select quote-form-element">
+								<select name="EMIRATES OF REGISTRATION" class="custom-dropdown-select quote-form-element">
 									<option value="0">Emirate of Rregistration</option>
 									<option value="1">Dubai</option>
 									<option value="2">Abu Dhabi</option>
@@ -226,53 +424,45 @@
 
 							</span>
 							<div style="width: 100%; margin-top: -10px;">
-								<div style="width: 50%; float: left;">
-									<span class="custom-checkbox" style="width: 300px;">
+								<div style="float: left;margin-right: 10px;">
+									<span class="custom-checkbox" >
 										<h4>COMPREHENSIVE <input type="checkbox" name="" class="my_popup_open" class="checkbox"></h4>
 									</span>
-									<div style="padding: 10px; padding-left: 61px; border: 1px solid #eee; margin-right: 10px; background: #fbf7f7;">
-										<span class="custom-checkbox">
-											<h5>Agency</h5>
-											<div class="checkbox quote-form-element" data-checked="no" data-name="GCC Spec">
+									<div style="/*padding: 10px;*/ ; border: 1px solid #eee; width:460px;margin-right: 1px; background: #fbf7f7;">
+										<span class="custom-checkbox" style="float:left;width:200px;margin-left: 25px">
+											<h5>Agency/Non-Agency Repair</h5>
+											<div style="width:198px" class="checkbox quote-form-element" data-checked="no" data-name="GCC Spec">
 
 												<span class="checkbox-status"><i class="fa fa-times"></i></span>
 												<span class="checkbox-values">
 
-													<span class="checkbox-value-checked">Yes</span>
-													<span class="checkbox-value-unchecked">No</span>
+													<span class="checkbox-value-checked">Agency</span>
+													<span class="checkbox-value-unchecked">Non Agency</span>
 
 												</span>
 
 											</div>
 										</span>
-										<span class="custom-checkbox">
-											<h5>Non Agency</h5>
-											<div class="checkbox quote-form-element" data-checked="no" data-name="GCC Spec">
+										<span class="custom-checkbox" style="margin-right: 10px;">
+											<h5>OWNER</h5>
+											<div style="width:198px;margin-left: 5px" class="checkbox quote-form-element" data-checked="no" data-name="GCC Spec">
 
 												<span class="checkbox-status"><i class="fa fa-times"></i></span>
 												<span class="checkbox-values">
 
-													<span class="checkbox-value-checked">Yes</span>
-													<span class="checkbox-value-unchecked">No</span>
+													<span class="checkbox-value-checked">I am an indivisual</span>
+													<span class="checkbox-value-unchecked">No its Company owned</span>
 
 												</span>
 
 											</div>
 										</span>
-										<span class="custom-checkbox" style="margin-top:10px;">
-											<input type="text" name="Last year value" placeholder="Last Year Value..." class="quote-form-element" />
-											<input type="text" name="Current Value" placeholder="Current Value..." class="quote-form-element quote-form-client-email last " />
+										
+										<span class="custom-checkbox" style="margin-left: 25px">
+											<input style="width:149px;margin-right:14px;float: left;margin-top: 10px;" type="text" name="Last year value" placeholder="Last Year Value..." class="quote-form-element" />
+											<input style="width:149px;margin-top: 10px;" type="text" name="Current Value" placeholder="Current Value..." class="quote-form-element quote-form-client-email last " />
 										</span>
-										<span class="custom-dropdown" style="padding-left: 90px;">
-
-											<select name="Agency Type" class="custom-dropdown-select quote-form-element quote-form-inner-element">
-
-												<option value="-">Agency Type</option>
-												<option value="standard">Standard</option>
-												<option value="Superior">Superior</option>
-											</select>
-
-										</span>
+										
 									</div>
 								</div>
 								<div style="width: 46%; float: left;">
@@ -384,8 +574,8 @@
 
 
 							<div>
-								<h5><input type="checkbox" name=""> I Agree for Terms &amp; Conditions</h5>
-								<button  class="button button-navy-blue send-quote" type="button" style="margin: 0 auto;">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+								<h5><input type="checkbox" name=""> I Agree to Terms & Conditions; Conditions</h5>
+								<button id="GetQuote" class="button button-navy-blue send-quote" type="button" style="margin: 0 auto;">Get a quote <i class="fa fa-paper-plane-o"></i></button>
 							</div>
 
 							<div class="quote-form-thanks">
@@ -402,405 +592,136 @@
 						</div>
 
 					</div>
-
+</form>
 				</div>
 
-				<!-- car insurance -->
-				<div class="quote-form" data-quote-form-for="send-mail">
-
-					<i class="fa fa-car background-icon"></i>
-
-					<div class="quote-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' ); width: 166px;">
-					</div>
-
-					<div class="quote-form-content">
-
-						<h2>Info Form <span>Quote</span></h2>
-						<div class="form">
-
-
-							<span class="custom-dropdown">
-                            <div class="box">
-					<input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
-					<label for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label>
-				</div>
-
-
-							</span>
-
-							<span class="custom-dropdown">
-
-								<select name="Registration year" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">Registration year</option>
-									<option value="2015">2015</option>
-									<option value="2014">2014</option>
-									<option value="2013">2013</option>
-									<option value="2012">2012</option>
-									<option value="2011">2011</option>
-									<option value="2010">2010</option>
-									<option value="2009">2009</option>
-									<option value="2008">2008</option>
-									<option value="2007">2007</option>
-									<option value="2006">2006</option>
-									<option value="2005">2005</option>
-									<option value="2004">2004</option>
-									<option value="2003">2003</option>
-									<option value="2002">2002</option>
-									<option value="2001">2001</option>
-									<option value="2000">2000</option>
-									<option value="1999">1999</option>
-									<option value="1998">1998</option>
-									<option value="1997">1997</option>
-									<option value="1996">1996</option>
-									<option value="1995">1995</option>
-									<option value="1994">1994</option>
-									<option value="1993">1993</option>
-									<option value="1992">1992</option>
-									<option value="1991">1991</option>
-									<option value="1990">1990</option>
-									<option value="1989">1989</option>
-									<option value="1988">1988</option>
-									<option value="1987">1987</option>
-									<option value="1986">1986</option>
-									<option value="1985">1985</option>
-									<option value="1984">1984</option>
-									<option value="1983">1983</option>
-									<option value="1982">1982</option>
-									<option value="1981">1981</option>
-									<option value="1980">1980</option>
-									<option value="1979">1979</option>
-									<option value="1978">1978</option>
-									<option value="1977">1977</option>
-									<option value="1976">1976</option>
-									<option value="1975">1975</option>
-									<option value="1974">1974</option>
-									<option value="1973">1973</option>
-									<option value="1972">1972</option>
-									<option value="1971">1971</option>
-									<option value="1970">1970</option>
-									<option value="1969">1969</option>
-									<option value="1968">1968</option>
-									<option value="1967">1967</option>
-									<option value="1966">1966</option>
-									<option value="1965">1965</option>
-									<option value="1964">1964</option>
-									<option value="1963">1963</option>
-									<option value="1962">1962</option>
-									<option value="1961">1961</option>
-									<option value="1960">1960</option>
-									<option value="1959">1959</option>
-									<option value="1958">1958</option>
-									<option value="1957">1957</option>
-									<option value="1956">1956</option>
-									<option value="1955">1955</option>
-									<option value="1954">1954</option>
-									<option value="1953">1953</option>
-									<option value="1952">1952</option>
-									<option value="1951">1951</option>
-									<option value="1950">1950</option>
-
-								</select>
-
-							</span>
-
-							<span class="custom-dropdown">
-
-								<select name="Driving License" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">Driving License</option>
-									<option value="lessthan6mon">Less than 6 months</option>
-									<option value="lessthan1">Less than 1 year</option>
-									<option value="1 Year">1 Year</option>
-									<option value="2 Year">2 Year</option>
-								</select>
-
-							</span>
-
-
-							<span class="custom-dropdown">
-
-								<select name="EMIRATE OF REGISTRATION" class="custom-dropdown-select quote-form-element">
-									<option value="0">Emirate of Rregistration</option>
-									<option value="1">Dubai</option>
-									<option value="2">Abu Dhabi</option>
-									<option value="3">Sharjah</option>
-									<option value="4">Ras Al Khaimah</option>
-									<option value="5">Ajman</option>
-									<option value="6">Fujairah</option>
-									<option value="7">Umm Al Quwain</option>
-								</select>
-
-							</span>
-							<div style="width: 100%; margin-top: -10px;">
-								<div style="width: 50%; float: left;">
-									<span class="custom-checkbox" style="width: 300px;">
-										<h4>COMPREHENSIVE <input type="checkbox" name="" class="my_popup_open" class="checkbox"></h4>
-									</span>
-									<div style="padding: 10px; padding-left: 61px; border: 1px solid #eee; margin-right: 10px; background: #fbf7f7;">
-										<span class="custom-checkbox">
-											<h5>Agency</h5>
-											<div class="checkbox quote-form-element" data-checked="no" data-name="GCC Spec">
-
-												<span class="checkbox-status"><i class="fa fa-times"></i></span>
-												<span class="checkbox-values">
-
-													<span class="checkbox-value-checked">Yes</span>
-													<span class="checkbox-value-unchecked">No</span>
-
-												</span>
-
-											</div>
-										</span>
-										<span class="custom-checkbox">
-											<h5>Non Agency</h5>
-											<div class="checkbox quote-form-element" data-checked="no" data-name="GCC Spec">
-
-												<span class="checkbox-status"><i class="fa fa-times"></i></span>
-												<span class="checkbox-values">
-
-													<span class="checkbox-value-checked">Yes</span>
-													<span class="checkbox-value-unchecked">No</span>
-
-												</span>
-
-											</div>
-										</span>
-										<span class="custom-checkbox" style="margin-top:10px;">
-											<input type="text" name="Last year value" placeholder="Last Year Value..." class="quote-form-element" />
-											<input type="text" name="Current Value" placeholder="Current Value..." class="quote-form-element quote-form-client-email last " />
-										</span>
-										<span class="custom-dropdown" style="padding-left: 90px;">
-
-											<select name="Agency Type" class="custom-dropdown-select quote-form-element quote-form-inner-element">
-
-												<option value="-">Agency Type</option>
-												<option value="standard">Standard</option>
-												<option value="Superior">Superior</option>
-											</select>
-
-										</span>
-									</div>
-								</div>
-								<div style="width: 46%; float: left;">
-									<span class="custom-checkbox" style="width: 300px;">
-										<h4>THIRD PARTY LIABILITY <input type="checkbox" name="" class="my_popup_open"></h4>
-									</span>
-									<div style="padding: 10px; padding-left:45px; border: 1px solid #eee; background: #fbf7f7;">
-										<span class="custom-dropdown">
-
-											<select name="No. of Cyclinders" class="custom-dropdown-select quote-form-element quote-form-inner-element">
-
-												<option value="0">No. of Cyclinders</option>
-												<option value="1">4 Cyclinders</option>
-												<option value="2">6 Cyclinders</option>
-												<option value="3">8 Cyclinders</option>
-												<option value="4">8 Cyclinders Above</option>
-												<option value="5">Sports/Coupe</option>
-											</select>
-
-										</span>
-										<span class="custom-dropdown">
-
-											<select name="Body Vehicle Type" class="custom-dropdown-select quote-form-element quote-form-inner-element">
-												<option value="0">Body Vehicle Type</option>
-												<option value="1">Private Vehicle Saloon</option>
-												<option value="2">Private Vehicle (Station wagon)</option>
-											</select>
-
-										</span>
-									</div>
-								</div>	
-							</div>
-
-							<div style="width: 100%; display: inline-block; padding-bottom: 10px; padding-top: 14px;">
-								<span class="custom-checkbox">
-									<h5>GCC Spec</h5>
-									<div class="checkbox quote-form-element" data-checked="no" data-name="GCC Spec">
-
-										<span class="checkbox-status"><i class="fa fa-times"></i></span>
-										<span class="checkbox-values">
-
-											<span class="checkbox-value-checked">Yes</span>
-											<span class="checkbox-value-unchecked">No</span>
-
-										</span>
-
-									</div>
-								</span>
-								<span class="custom-checkbox">
-									<h5>PAB for Driver</h5>
-									<div class="checkbox quote-form-element" data-checked="no" data-name="PAB for Driver">
-
-										<span class="checkbox-status"><i class="fa fa-times"></i></span>
-										<span class="checkbox-values">
-
-											<span class="checkbox-value-checked">Yes</span>
-											<span class="checkbox-value-unchecked">No</span>
-
-										</span>
-
-									</div>
-								</span>
-
-								<span class="custom-checkbox">
-									<h5>Roadside Assistance</h5>
-									<div class="checkbox quote-form-element" data-checked="no" data-name="Roadside Assistance">
-
-										<span class="checkbox-status"><i class="fa fa-times"></i></span>
-										<span class="checkbox-values">
-
-											<span class="checkbox-value-checked">Yes</span>
-											<span class="checkbox-value-unchecked">No</span>
-
-										</span>
-
-									</div>
-								</span>
-
-								<span class="custom-checkbox">
-									<h5>PAB for Passengers</h5>
-									<div class="checkbox quote-form-element" data-checked="no" data-name="PAB for Passengers">
-
-										<span class="checkbox-status"><i class="fa fa-times"></i></span>
-										<span class="checkbox-values">
-
-											<span class="checkbox-value-checked">Yes</span>
-											<span class="checkbox-value-unchecked">No</span>
-
-										</span>
-
-									</div>
-								</span>
-
-								<span class="custom-checkbox last">
-									<h5>Add Rent a Car</h5>
-									<div class="checkbox quote-form-element" data-checked="no" data-name="Add Rent a Car">
-
-										<span class="checkbox-status"><i class="fa fa-times"></i></span>
-										<span class="checkbox-values">
-
-											<span class="checkbox-value-checked">Yes</span>
-											<span class="checkbox-value-unchecked">No</span>
-
-										</span>
-
-									</div>
-								</span>
-							</div>
-
-
-							<div>
-								<h5><input type="checkbox" name=""> I Agree for Terms &amp; Conditions</h5>
-								<button  class="button button-navy-blue send-quote" type="button" style="margin: 0 auto;">Get a quote <i class="fa fa-paper-plane-o"></i></button>
-							</div>
-
-							<div class="quote-form-thanks">
-
-								<div class="quote-form-thanks-content">
-
-									Your insurance quote has been sent successfully. 
-									<span class="quote-form-thanks-close">Close this notice.</span>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<!-- Health insurance -->
-                <form method="post" id='healthform'>
 				<div class="quote-form" data-quote-form-for="health-insurance">
 
 					<i class="fa fa-umbrella background-icon"></i>
 
-					<div class="quote-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' ); width: 166px;">
+					<div class="quote-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/Picture1.png' ); width: 166px; background-size:215px;">
 					</div>
 
 					<div class="quote-form-content">
-
+<form id="healthform">
 						<h2>Health Insurance <span>Quote</span></h2>
 						<div class="form" id="health_insurance_primary_form">
 
-							<span class="custom-dropdown">
+							
 
-								<select name="Vehicle Type" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">Vehicle Type</option>
-									<option value="Buses">Buses</option>
-									<option value="Heavy Vehicle">Heavy Vehicle</option>
-									<option value="Saloon">Saloon</option>
-									<option value="Sport">Sport</option>
-								</select>
-
+							<!-- <input type="date" name="dob"> -->
+							
+							<span class="custom-checkbox" >
+								<h5>Email ID</h5>
+								
+								<input id='cemail'  type="text" style="width:173px;margin-right: -1px;height:35px ;margin: 4px -1px 10px 1px;" class="custom-dropdown-select quote-form-element" name="Email ID" placeholder="Email ID..." />
 							</span>
-							<span class="custom-dropdown">
-
-								<select name="Vehicle Type" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">Vehicle Type</option>
-									<option value="Buses">Buses</option>
-									<option value="Heavy Vehicle">Heavy Vehicle</option>
-									<option value="Saloon">Saloon</option>
-									<option value="Sport">Sport</option>
-								</select>
-
+							<span class="custom-checkbox" >
+								<h5>Mobile No</h5>
+								
+								<input  type="text" style="width:173px;margin-right: -1px;height:35px ;margin: 4px -1px 10px 1px;;margin-bottom: 10px;" class="custom-dropdown-select quote-form-element" name="Mobile No" placeholder="Mobile No..." />
 							</span>
-							<span class="custom-dropdown">
-
-								<select name="Vehicle Type" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">Vehicle Type</option>
-									<option value="Buses">Buses</option>
-									<option value="Heavy Vehicle">Heavy Vehicle</option>
-									<option value="Saloon">Saloon</option>
-									<option value="Sport">Sport</option>
-								</select>
-
+							
+							<span class="custom-checkbox" >
+								<h5>Desired Hospital/Clinic</h5>
+								
+								<input  type="text" style="width:173px;margin-right: -1px;height:35px ;margin: 4px -1px 10px 1px;;margin-bottom: 10px;" class="custom-dropdown-select quote-form-element" name="Hospital" placeholder="Enter Hospital/Clinic..." />
 							</span>
-							<span class="custom-dropdown">
+						
+							
+							
 
-								<select name="Vehicle Type" class="custom-dropdown-select quote-form-element">
+							<span class="custom-checkbox">
+								<h5>Emirate</h5>
+								<span class="custom-dropdown">
 
-									<option value="-">Vehicle Type</option>
-									<option value="Buses">Buses</option>
-									<option value="Heavy Vehicle">Heavy Vehicle</option>
-									<option value="Saloon">Saloon</option>
-									<option value="Sport">Sport</option>
-								</select>
+									<select name="Emirate" class="custom-dropdown-select quote-form-element">
 
-							</span>
-							<span class="custom-dropdown">
+										<option value="0">Emirate</option>
+									<option value="0">Emirates</option>
+									<option value="1">Dubai</option>
+									<option value="2">Abu Dhabi</option>
+									<option value="3">Sharjah</option>
+									<option value="4">Ras Al Khaimah</option>
+									<option value="5">Ajman</option>
+									<option value="6">Fujairah</option>
+									<option value="7">Umm Al Quwain</option>
+									</select>
 
-								<select name="Vehicle Type" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">Vehicle Type</option>
-									<option value="Buses">Buses</option>
-									<option value="Heavy Vehicle">Heavy Vehicle</option>
-									<option value="Saloon">Saloon</option>
-									<option value="Sport">Sport</option>
-								</select>
-
-							</span>
-							<span class="custom-dropdown">
-
-								<select name="Vehicle Type" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">Vehicle Type</option>
-									<option value="Buses">Buses</option>
-									<option value="Heavy Vehicle">Heavy Vehicle</option>
-									<option value="Saloon">Saloon</option>
-									<option value="Sport">Sport</option>
-								</select>
-
+								</span>
 							</span>
 
-							<span class="custom-checkbox last" style="margin-top: -9px;">
-								<div class="checkbox quote-form-element is_insured" data-checked="no" data-name="Are you currently insured ?" style="width:224px;">
+
+							
+
+							<span class="custom-checkbox" style="width:240;"">
+								<h5>Deductible</h5>
+								<span class="custom-dropdown">
+
+									<select name="Deductible" class="custom-dropdown-select quote-form-element">
+
+										<option value="0">Deductible</option>
+									<option value="1">Nil</option>
+									<option value="2">AED 25</option>
+									<option value="3">AED 50</option>
+									<option value="4">AED 75</option>
+									<option value="5">AED 100</option>
+									</select>
+
+								</span>
+							</span>
+
+</form>
+
+
+						
+
+							<span class="custom-checkbox" style="margin-left: -9px;""> 
+								<h5>Geographical Coverage</h5>
+								<span class="custom-dropdown">
+
+									<select name="Geographical Coverage" class="custom-dropdown-select quote-form-element">
+
+										<option value="0">Geographical Coverage</option>
+									<option value="1">UAE</option>
+									<option value="2">GCC</option>
+									<option value="3">Middle East & North Africa</option>
+									<option value="4">Worlwide except USA</option>
+									<option value="5">Worlwide</option>
+
+									</select>
+
+								</span>
+							</span>
+							
+
+
+
+							<span class="custom-checkbox last" style="margin-top: -9px;;margin-left: -10px;">
+							<h5>Dental Benefits</h5>
+								<div class="checkbox quote-form-element is_insured" data-checked="no" data-name="Are you currently insured ?" style="width:800;">
+
+									<span class="checkbox-status"><i class="fa fa-times"></i></span>
+									<span class="checkbox-values">
+
+										<span class="checkbox-value-checked">Yes,I want.</span>
+										<span class="checkbox-value-unchecked">No, I dont want.</span>
+
+									</span>
+
+
+									
+								</div>
+							</span>
+							
+								
+							
+							
+
+
+							<span class="custom-checkbox last" style="margin-top: -9px;margin-left: -1px;">
+							<h5>Previous Insurance</h5>
+								<div class="checkbox quote-form-element is_insured" data-checked="no" data-name="Are you currently insured ?" style="width:800;">
 
 									<span class="checkbox-status"><i class="fa fa-times"></i></span>
 									<span class="checkbox-values">
@@ -812,29 +733,30 @@
 
 								</div>
 							</span>
-							<span class="custom-checkbox">
+
+
+							<span class="custom-checkbox" style="width: 2px;margin-right: -50 ;margin-top: 36px;margin-left: -3px;height: 48px;">
 								<input type="text" class="quote-form-element quote-form-company-name" name="Name of Company" placeholder="Name of the company..." style="width:174px; display: none"/>
+							</span>
+
+							</div>
 							</span>
 
 							<div style="width: 96%;">
 								<h4>Premium Range: <span class="slider-value quote-form-element" data-name="Premium Range" data-slider-id="premium-range">AED <span></span></span></h4>
-								<div class="slider" data-slider-min="500" data-slider-max="250000" data-slider-start="500" data-slider-step="100" data-slider-id="premium-range"></div>
+								<div class="slider" data-slider-min="600" data-slider-max="25000" data-slider-start="600" data-slider-step="20" data-slider-id="premium-range"></div>
 								<h4>Sum in increased Annual Coverage: <span class="slider-value quote-form-element" data-name="Sum in increased Annual Coverage" data-slider-id="annual-coverage">AED <span></span></span></h4>
-								<div class="slider" data-slider-min="50000" data-slider-max="200000" data-slider-start="50000" data-slider-step="1000" data-slider-id="annual-coverage"></div>
+								<div class="slider" data-slider-min="50000" data-slider-max="1000000" data-slider-start="50000" data-slider-step="10000" data-slider-id="annual-coverage"></div>
 
 							</div>
-							<hr>
-							<span class="custom-checkbox">
-								<h5>Name</h5>
-								<input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
-							</span>
 
-							<!-- <input type="date" name="dob"> -->
-							<span class="custom-checkbox">
-								<h5>DOB</h5>
-								<input type="date" name="dob" class="quote-form-element quote-form-dob">
-							</span>
+							<div>
 
+							<span class="custom-checkbox" >
+								<h5>NAME</h5>
+								
+								<input  type="text" style="width:173px;margin-right: -1px;height:35px ;margin: 4px -1px 10px 1px;" class="custom-dropdown-select quote-form-element"  placeholder="Full Name..." />
+							</span>
 							<span class="custom-checkbox">
 								<h5>Gender</h5>
 								<span class="custom-dropdown">
@@ -843,7 +765,8 @@
 
 										<option value="0">Gender</option>
 										<option value="1">Male</option>
-										<option value="2">Female</option>
+										<option value="2">Female(Married)</option>
+										<option value="3">Female(Unmarried)</option>
 									</select>
 
 								</span>
@@ -856,16 +779,32 @@
 									<select name="Employment Type" class="custom-dropdown-select quote-form-element">
 
 										<option value="0">Employment Type</option>
-										<option value="1">Employee</option>
+										<option value="1">Employee(Salary > 4k)</option>
+										<option value="2">Employee(Salary < 4k)</option>
 										<option value="2">Dependent</option>
 									</select>
 
 								</span>
 							</span>
+							
 
+							<!-- <input type="date" name="dob"> -->
+							
+	<span class="custom-dropdown">
+
+								<select name="Driving License" class="custom-dropdown-select quote-form-element">
+
+									<option value="-">Age</option>
+									<option value="lessthan6mon">Less than 25 years</option>
+									<option value="lessthan1">More than 25 years</option>
+								
+								</select>
+
+							</span>
+							</div>
 
 							<div>
-								<h5><input type="checkbox" name="terms"> I Agree for Terms &amp; Conditions</h5>
+								<h5><input type="checkbox" name="terms"> I Agree to the Terms & Conditions</h5>
 								<div style="padding-left: 31%">
 									<button id='GetQuote' class="button button-navy-blue send-quote" style="float: left; margin-right:10px; " type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
 									<button class="button button-navy-blue send-quote addMember" style="float:left;" type="button" >Add Member <i class="fa fa-user-plus"></i></button>
@@ -888,13 +827,13 @@
 							<div class="new-member-container">
 								<span class="custom-checkbox">
 									<h5>Name</h5>
-									<input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
+									<input type="text" class="quote-form-element quote-form-client-name"  placeholder="Full Name..." />
 								</span>
 
 								<!-- <input type="date" name="dob"> -->
 								<span class="custom-checkbox">
 									<h5>DOB</h5>
-									<input type="date" name="dob" class="quote-form-element quote-form-dob">
+									<input type="date" name="dob" style="width:193px;margin-right: 5px;height:55px" class="quote-form-element quote-form-dob">
 								</span>
 
 								<span class="custom-checkbox">
@@ -905,7 +844,9 @@
 
 											<option value="0">Gender</option>
 											<option value="1">Male</option>
-											<option value="2">Female</option>
+											<option value="2">Female(Married)</option>
+											<option value="3">Female(Unmarried)</option>
+
 										</select>
 
 									</span>
@@ -917,7 +858,7 @@
 
 										<select name="Employment Type" class="custom-dropdown-select quote-form-element">
 
-											<option value="0">Employment Type</option>
+											<option value="0">Visa Type</option>
 											<option value="1">Employee</option>
 											<option value="2">Dependent</option>
 										</select>
@@ -927,9 +868,9 @@
 							</div>
 							<div class="more-members"></div>
 							<div style="width: 100%; padding-left: 23%">
-								<button class="button button-navy-blue send-quote goBack" style="float:left;margin-right: 10px;" type="button" ><i class="fa fa-arrow-circle-o-left"></i> Back</button>
-								<button id='GetQuote' class="button button-navy-blue send-quote" style="float:left; margin-right: 10px;" type="button" >Get a quote <i class="fa fa-paper-plane-o"></i></button>
-								<button class="button button-navy-blue send-quote addMember" style="float:left; " type="button" >Add Member <i class="fa fa-user-plus"></i></button>
+								<button class="button button-navy-blue goBack" style="float:left;margin-right: 10px;" type="button" ><i class="fa fa-arrow-circle-o-left"></i> Back</button>
+								<button class="button button-navy-blue send-quote" style="float:left; margin-right: 10px;" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+								<button class="button button-navy-blue addMember" style="float:left; " type="button" >Add Member <i class="fa fa-user-plus"></i></button>
 
 							</div>
 
@@ -937,302 +878,119 @@
 					</div>
 
 				</div>
-                </form>
+
+				<!-- Health insurance -->
+				<div class="quote-form" data-quote-form-for="contact-us-form">
+
+					<i class="fa fa-umbrella background-icon"></i>
+
+					<div class="quote-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/Picture1.png' ); width: 166px; background-size:215px;">
+					</div>
+<div id="google-map" data-lat="37.42565" data-lng="-122.13535" data-zoom-level="12">
+			</div>
+					<div class="quote-form-content">
+
+
+						<h2>Contact US <span>Quote</span></h2>
+						<div class="form" id="health_insurance_primary_form">
+
+<h2>Send us an <span>email!</span></h2>
+				<form method="post" class="form">
+
+					<h4>Contact details:</h4>
+					<input type="text" name="Name" placeholder="Your name..." class="contact-form-element contact-form-client-name" />
+					<input type="text" name="Phone number" placeholder="Your phone number..." class="contact-form-element last" />
+					<input type="text" name="E-mail" placeholder="Your e-mail..." class="contact-form-element contact-form-client-email" />
+					<input type="text" name="Title" placeholder="E-mail title..." class="contact-form-element contact-form-client-message-title last" />
+
+					<h4>Message:</h4>
+					<textarea name="Message" rows="5" cols="5" placeholder="Your message..." class="contact-form-element"></textarea>
+					<button class="button button-navy-blue send-contact" type="button">Send a message! <i class="fa fa-paper-plane-o"></i></button>      
+
+					<div class="contact-form-thanks">
+
+						<div class="contact-form-thanks-content">
+
+							Your message has been sent successfully. 
+							<span class="contact-form-thanks-close">Close this notice.</span>
+
+						</div>
+
+					</div>         
+
+				</form>
+							
+
+						</div>
+					</div>
+
+				</div>
+
 				<!-- house insurance -->
-				<div class="quote-form" data-quote-form-for="house-insurance">
+				<div class="quote-form" data-quote-form-for="upload-documents">
 
 					<i class="fa fa-home background-icon"></i>
 
-					<div class="quote-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' );">
+					<div class="quote-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/image.png' );">
 					</div>
 
-					<div class="quote-form-content">
+					<div class="quote-form-content" style="width:61%;">
 
-						<h2>House Insurance <span>Quote</span></h2>
-						<div class="form">
-
-							<h4>Your house:</h4>
-							<span class="custom-dropdown">
-
-								<select name="What sort of property is it?" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">What sort of property is it?</option>
-									<option value="House">House</option>
-									<option value="Flat / Apartment">Flat / Apartment</option>
-									<option value="Bungalow">Bungalow</option>
-									<option value="Town house">Town house</option>
-									<option value="Other">Other</option>
-
-								</select>
-
+						<h2>Upload <span>Documents</span></h2>
+						<form method="post" id="uploadP">
+						<div class="form" id="uploadfrm">
+							<span class="custom-checkbox">
+								<h5>Email ID</h5>
+								<input id="cemail" readonly='true' type="text" class="quote-form-element quote-form-client-name" name="emailaddress" placeholder="Email ID...." />
 							</span>
-
-							<span class="custom-dropdown last">
-
-								<select name="What type of property is it?" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">What type of property is it?</option>
-									<option value="Semi-detached">Semi-detached</option>
-									<option value="Detached">Detached</option>
-									<option value="Link-detached">Link-detached</option>
-									<option value="Terraced">Terraced</option>
-									<option value="End terrace">End terrace</option>
-
-								</select>
-
+							<span class="custom-checkbox">
+								<h5>Phone No.</h5>
+								<input id='mobileno' readonly='true' type="text" class="quote-form-element quote-form-client-name" name="mobileno" placeholder="Phone No...." />
 							</span>
-
-							<input type="text" class="quote-form-element" name="Roughly when was it built?" placeholder="Roughly when was it built?" />
-							<input type="text" class="quote-form-element last" name="House Postcode" placeholder="House Postcode" />
-
-							<h4>Contact details:</h4>
-							<input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Full Name..." />
-
-							<span class="custom-dropdown last">
-
-								<select name="Age" class="custom-dropdown-select quote-form-element">
-
-									<option value="-">Your age</option>
-									<option value="18">18</option>
-									<option value="19">19</option>
-									<option value="20">20</option>
-									<option value="21">21</option>
-									<option value="22">22</option>
-									<option value="23">23</option>
-									<option value="24">24</option>
-									<option value="25">25</option>
-									<option value="26">26</option>
-									<option value="27">27</option>
-									<option value="28">28</option>
-									<option value="29">29</option>
-									<option value="30">30</option>
-									<option value="31">31</option>
-									<option value="32">32</option>
-									<option value="33">33</option>
-									<option value="34">34</option>
-									<option value="35">35</option>
-									<option value="36">36</option>
-									<option value="37">37</option>
-									<option value="38">38</option>
-									<option value="39">39</option>
-									<option value="40">40</option>
-									<option value="41">41</option>
-									<option value="42">42</option>
-									<option value="43">43</option>
-									<option value="44">44</option>
-									<option value="45">45</option>
-									<option value="46">46</option>
-									<option value="47">47</option>
-									<option value="48">48</option>
-									<option value="49">49</option>
-									<option value="50">50</option>
-									<option value="51">51</option>
-									<option value="52">52</option>
-									<option value="53">53</option>
-									<option value="54">54</option>
-									<option value="55">55</option>
-									<option value="56">56</option>
-									<option value="57">57</option>
-									<option value="58">58</option>
-									<option value="59">59</option>
-									<option value="60">60</option>
-									<option value="61">61</option>
-									<option value="62">62</option>
-									<option value="63">63</option>
-									<option value="64">64</option>
-									<option value="65">65</option>
-									<option value="66">66</option>
-									<option value="67">67</option>
-									<option value="68">68</option>
-									<option value="69">69</option>
-									<option value="70">70</option>
-									<option value="71">71</option>
-									<option value="72">72</option>
-									<option value="73">73</option>
-									<option value="74">74</option>
-									<option value="75">75</option>
-									<option value="76">76</option>
-									<option value="77">77</option>
-									<option value="78">78</option>
-									<option value="79">79</option>
-									<option value="80">80</option>
-									<option value="81">81</option>
-									<option value="82">82</option>
-									<option value="83">83</option>
-									<option value="84">84</option>
-									<option value="85">85</option>
-									<option value="86">86</option>
-									<option value="87">87</option>
-									<option value="88">88</option>
-									<option value="89">89</option>
-									<option value="90">90</option>
-									<option value="91">91</option>
-									<option value="92">92</option>
-									<option value="93">93</option>
-									<option value="94">94</option>
-									<option value="95">95</option>
-									<option value="96">96</option>
-									<option value="97">97</option>
-									<option value="98">98</option>
-									<option value="99">99</option>
-
-								</select>
-
+							<span class="custom-checkbox">
+								<h5>Driving License.</h5>
+								<input id='file1' type="file" class="quote-form-element quote-form-client-name"  placeholder="Phone No...." />
 							</span>
-
-							<input type="text" name="Phone Number" placeholder="Phone Number..." class="quote-form-element" />
-							<input type="text" name="E-mail Address" placeholder="E-mail Address..." class="quote-form-element quote-form-client-email last" />
-
-							<button class="button button-navy-blue send-quote" type="button">Get a quote <i class="fa fa-paper-plane-o"></i></button>
-
-							<div class="quote-form-thanks">
-
-								<div class="quote-form-thanks-content">
-
-									Your insurance quote has been sent successfully. 
-									<span class="quote-form-thanks-close">Close this notice.</span>
-
-								</div>
-
+							<span class="custom-checkbox">
+								<h5>Mulkiya.</h5>
+								<input id='file2'  type="file" class="quote-form-element quote-form-client-name"  placeholder="Phone No...." />
+							</span>
+							<span class="custom-checkbox">
+								<h5>Emirates ID.</h5>
+								<input id='file3'  type="file" class="quote-form-element quote-form-client-name"  placeholder="Phone No...." />
+							</span>
+							<div>
+								<h5><input type="checkbox" name=""> I Agree to Terms & Conditions; Conditions</h5>
+								<button class="button button-navy-blue send-quote addProfile" type="button" style="margin: 0 auto;">Submit <i class="fa fa-paper-plane-o"></i></button>
 							</div>
-
 						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-
-		</div>
-
-	</div>
-    <!-- dash page-->
-    <div id="dash-popup">
-
-		<div id="dash-popup-background">
-		</div>
-
-		<div id="dash-popup-content" class="animated speed">
-
-			<div id="dash-popup-close"><i class="fa fa-times"></i></div>
-
-		<!--	<ul id="dash-popup-tabs">
-
-			
-				<li data-dash-tab-for="car-insurance">dash/Sign Up</li>
-				
-
-			</ul>-->
-
-
-			<div class="dash-forms">
-            	<div class="dash-form" data-dash-form-for="car-insurance">
-
-					<i class="fa fa-car background-icon"></i>
-
-					<div class="dash-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' ); width: 166px;">
-					</div>
-
-					<div class="dash-form-content">
-
-						<h2>Dash<span>Board</span></h2>
-						<div class="form" id='dash_primary_form'>
-
-                        
-
-							
-
-							
-
-
-							
-							<div style="width: 100%; margin-top: -10px;">
-								<div style="width: 25%; float: left;">
+						<div id="loginP" style="display:none;width: 100%; margin-top: -10px;">
+						<h5>Sign in to activate your account</h5>
+								<div style="width: 45%; float: left;">
                                 <div style="padding: 10px; padding-left:61px;">
-     		<div style=" border-right: 1px solid #eee; margin-right: 10px; ">
-							<img class="passport" src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/avatar.png" width="100%"/>
-    		<span class="custom-checkbox left">
-								<h5>Name:</h5>
-								
-							</span>
-                            <span class="custom-checkbox left">
-								<h5>Email:</h5>
-								
-							</span>
-                            <span class="custom-checkbox left">
-								<h5>DOB:</h5>
+								<a href="#" style="float: left;" onclick="fb_login();"><img src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/fb.png" border="0" alt=""></a>
+								<div id="my-signin3"></div>
 							
-							</span>
-						
+
+  
+     
+									
+									
 							</div>	
 									</div>	
-									
+									</div>
 								</div>
-								<div style="width: 65%; float: left;padding-left:25px;">
-									<span class="custom-checkbox">
-								<h5>Company</h5>
-								<input type="text" class="dash-form-element dash-form-client-name" name="Full name" placeholder="Email ID...">
-							</span>
-                            		<span class="custom-checkbox">
-								<h5>Vehicle Type</h5>
-								<input type="text" class="dash-form-element dash-form-client-name" name="Full name" placeholder="Vehicle Type...">
-							</span>
-									<span class="custom-checkbox">
-								<h5>Status</h5>
-								<input type="text" class="dash-form-element dash-form-client-name" name="Full name" placeholder="Status...">
-							</span>
-                            <div class="new-document-container">
-									<span class="custom-checkbox" style="float:left" >
-								
-									<h5>Upload File</h5>
-									<input type="file" class="dash-form-element dash-form-client-name" name="Full name" placeholder="Browse..." />
-							
-
-							</span>
-                            </div>
-                            
-							<div class="more-document"></div>  
-								<button class="button button-navy-blue send-dash addDocument" style="float:left;position:absolute;top:188px; " type="button" >Add Document <i class="fa fa-user-plus"></i></button>
-					<button  class="button button-navy-blue send-dash" style="float:left;position:absolute;top:188px;right:390px"  type="button" style="margin: 0 auto;">SUBMIT <i class="fa fa-paper-plane-o"></i></button>
-							
-                            </div>
-								</div>	
-							</div>
-                     
-
-
-							
-
-							<div class="dash-form-thanks">
-
-								<div class="dash-form-thanks-content">
-
-									Your insurance quote has been sent successfully. 
-									<span class="dash-form-thanks-close">Close this notice.</span>
-
-								</div>
-
-							</div>
-
-						</div>
-
+</form>
 					</div>
 
 				</div>
 
-				
-
-
 			</div>
-
 
 		</div>
 
 	</div>
-    <!-- login page-->
-    <div id="login-popup">
+	<div id="login-popup">
 
 		<div id="login-popup-background">
 		</div>
@@ -1251,11 +1009,11 @@
 
 
 			<div class="login-forms">
-            	<div class="login-form" data-login-form-for="car-insurance">
+            	<div class="login-form" >
 
 					<i class="fa fa-car background-icon"></i>
 
-					<div class="login-form-background" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' ); width: 166px;">
+					<div class="login-form-background" style="background-image: url( '_assets/_img/image.png' ); width: 166px;">
 					</div>
 
 					<div class="login-form-content">
@@ -1275,19 +1033,18 @@
 							<div style="width: 100%; margin-top: -10px;">
 								<div style="width: 45%; float: left;">
                                 <div style="padding: 10px; padding-left:61px;">
-     <a href="#" class="loginSlogin"><img src="http://www.servicesonmove.com/images/faceBookLogin.png"></a>
-    
-     <a href="#" class="loginSlogin"><img src="http://www.servicesonmove.com/images/gPlusLogin.png"></a>
-   
+								<a style="float:left;" onclick="ckLogin();" href="#" ><img src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/fb.png" border="0" alt=""></a>
+								<div id="my-signin2" ></div>
+							
 									
 									<div style=" border-right: 1px solid #eee; margin-right: 10px; ">
 										<span class="custom-checkbox">
 								<h5>EMAIL ID</h5>
-								<input type="text" class="login-form-element login-form-client-name" name="Full name" placeholder="Email ID...">
+								<input type="text" class="login-form-element login-form-client-name"  placeholder="Email ID...">
 							</span>
                             		<span class="custom-checkbox">
 								<h5>PASSWORD</h5>
-								<input type="password" class="login-form-element login-form-client-name" name="Full name" placeholder="Password...">
+								<input type="password" class="login-form-element login-form-client-name"  placeholder="Password...">
 							</span>
 									
 									<div>
@@ -1343,18 +1100,24 @@
 		</div>
 
 	</div>
+
 	<header>
 
 		<div class="center">
 
 			<div class="logo">
 
-				<a href="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/logo.png" alt="Insurance Agency" style="height:48px; margin-top: -11px;"/></a>
+				<a href=""><img src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/logo1.png" alt="SARVAH TECHNOLOGY SOLUTIONS" style="height:48px; margin-top: -11px;"/></a>
 
 			</div>
 
 			<nav>
-				<div class="form call-us-form">
+			<ul class="menu">
+                
+               
+    
+              
+				<div class="form call-us-form" >
 
 					<!-- <div class="call-to-action-thanks"> -->
 
@@ -1368,14 +1131,17 @@
 					<!-- </div> -->
 
 					<input type="text" name="Phone number" placeholder="Your phone number..." class="phone-number" />
-					<button class="button button-navy-blue send-phone-call-quote">Get a phone call <i class="fa fa-phone"></i></button>
+					<button class="button button-navy-blue send-phone-call-quote" style="height:33px;" >Get a phone call <i class="fa fa-phone"></i></button>
+
 
 				</div>
-				<ul class="menu">
-
-
-
-				</ul>
+				
+				<li><button class="menu-element" data-action="show-contact-popup" style="position: absolute;right:140px;top:15px">Contact</button></li>
+				<li><button class="menu-element" data-action="show-logout" style="position: absolute;right:80px;top:15px">Log Out</button></li>
+				
+				  </ul>
+				
+				
 
 				<div class="menu-responsive"><i class="fa fa-bars"></i></div>
 
@@ -1392,11 +1158,10 @@
 
 		<div class="heading-slides">
 
-			<div class="heading-slide-single" data-slide-id="1" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/homepage.jpg' );">
-
+			<div class="heading-slide-single" data-slide-id="1" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/stock-photo.jpg' );">
 				<div class="flying-1">
 
-					<span>Services on move</span>
+					<span>Sarvah Technology Solutions</span>
 
 				</div>
 
@@ -1405,14 +1170,18 @@
 					<h3>Life insurances<br /> for your family</h3>
 					<p>Curabitur iaculis ante a nibh vulputate sollicitudin.</p>
                     
-					<button class="button button-white" data-action="show-quote-popup" data-quote-key="car-insurance">LOGIN/SIGNUP <i class="fa fa-paper-plane-o"></i></button>
+					<button class="button button-white" class="button button-white" data-action="show-login-popup" data-quote-key="car-insurance">LOGIN/SIGNUP <i class="fa fa-paper-plane-o"></i></button>
+                  
+<button class="button button-white" style="display:none" data-action="show-client-popup" data-quote-key="car-insurance">Dashboard <i class="fa fa-paper-plane-o"></i></button>
 
 				</div>
 
 				<div class="heading-content text-center">
+<button style="margin-right: 20px;" class="button button-lg button-navy-blue"  data-action="show-quote-popup" data-quote-key="car-insurance" >Motor Insurance  <i class="fa fa-paper-plane-o"></i></button>
 
-                
-					<button class="button button-lg button-navy-blue" data-action="show-quote-popup" data-quote-key="car-insurance">Get a quote <i class="fa fa-paper-plane-o"></i></button>
+<button style="margin-right: 20px;" class="button button-lg button-navy-blue"  data-action="show-quote-popup" data-quote-key="health-insurance">Health Insurance  <i class="fa fa-paper-plane-o"></i></button>
+
+
 
 				</div>
 
@@ -1447,7 +1216,7 @@
 					</div>
 
 					<input type="text" name="Phone number" placeholder="Your phone number..." class="phone-number" />
-					<button class="button button-navy-blue send-phone-call-quote">Get a phone call <i class="fa fa-phone"></i></button>
+					<button class="button button-navy-blue send-phone-call-quote" style="height:32.3px;">Get a phone call <i class="fa fa-phone"></i></button>
 
 				</div>
 
@@ -1473,7 +1242,7 @@
 
 						<div class="circle-center">
 
-							<div class="circle-center-tip">Call us: <strong>(+123) 456 789 000</strong></div>
+							<div class="circle-center-tip">Call us: <strong>+971 4333 8248</strong></div>
 							<i class="fa fa-phone"></i>
 
 						</div>
@@ -1501,10 +1270,10 @@
 			<div class="images">
 
 
-				<div class="image" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' );" data-insurance-key="health">
+				<div class="image" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/health-insurance1.jpg' );" data-insurance-key="health">
 				</div>
 
-				<div class="image" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' );" data-insurance-key="car">
+				<div class="image" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/car-insurance1.jpg' );" data-insurance-key="car">
 				</div>
 
 			</div>
@@ -1549,7 +1318,7 @@
 					<li data-insurance-key="health">
 
 						<i class="fa fa-umbrella"></i>
-						<span>Life insurance</span>
+						<span>Health insurance</span>
 
 					</li>
 
@@ -1574,30 +1343,30 @@
 			<div class="left">
 
 				<h3>About us</h3>
-				<h2>Meet our insurance agency.</h2>
+				<h2>Meet our SARVAH TECHNOLOGY SOLUTIONS.</h2>
 
-				<p>Curabitur iaculis ante a nibh vulputate sollicitudin. Integer ut tincidunt ligula. Praesent pretium, tellus at elementum ultrices.</p>
+				
 
 				<div class="timeline">
 
 					<div class="timeline-element">
 
-						<span class="date">March, 2009</span>
-						<p>The establishment of our agency, with two professional insurance agents, in small office in Boston.</p>
+						<span class="date">March, 2014</span>
+						<p>The establishment of our agency, with two professional insurance agents, in small office in UAE.</p>
 
 					</div>
 
 					<div class="timeline-element">
 
-						<span class="date">December, 2011</span>
-						<p>Three new insurance agents in our team, 2.500 customers!</p>
+						<span class="date">December, 2015</span>
+						<p>Three new insurance agents in our team, 2,50 customers!</p>
 
 					</div>
 
 					<div class="timeline-element">
 
-						<span class="date">February, 2014</span>
-						<p>Moving to a new office in Boston. More than 5.000 customers, great references and great view of the future!</p>
+						<span class="date">February, 2016</span>
+						<p>Moving to a new office in Dubai. More than 1,000 customers, great references and great view of the future!</p>
 
 					</div>
 
@@ -1616,10 +1385,10 @@
 
 					</div>
 
-					<div class="images-slider-single" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' );">
+					<div class="images-slider-single" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/insurance-agency.jpg' );">
 					</div>
 
-					<div class="images-slider-single" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' );">
+					<div class="images-slider-single" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/insurance-agency.jpg' );">
 					</div>
 
 				</div>
@@ -1644,13 +1413,7 @@
 				<h3>Our vision</h3>
 				<h2>Best insurances for everyone.</h2>
 
-				<blockquote>
-
-					<p>Phasellus quis tortor in arcu maximus vehicula. Donec eget elit vitae tortor convallis mattis. Aliquam erat volutpat. Integer vitae quam ut leo accumsan consequat eu ac sapien.</p>
-					<cite>John Doe</cite>
-
-				</blockquote>
-
+			
 			</div>
 
 			<div class="right">
@@ -1696,7 +1459,7 @@
 
 	</section>
 
-	<section class="image-slogan with-parallax" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_img/image.png' );">
+	<!--section class="image-slogan with-parallax" style="background-image: url( 'https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/img/image.png' );">
 
 		<div class="flying-1">
 
@@ -1713,7 +1476,7 @@
 
 		</div>
 
-	</section>
+	</section-->
 
 	<section class="contact section-gray">
 
@@ -1725,23 +1488,23 @@
 				<div class="contact-detail-single">
 
 					<h3><i class="fa fa-map-marker"></i> Company informations</h3>
-					<p><strong>Insurance Agency</strong><br /> John Doe</p>
-					<p class="without-margin-bottom">5002 Example Street<br /> Los Angeles, CA 90034</p>
+					<p><strong>SARVAH TECHNOLOGY SOLUTIONS</strong></p>
+					<p class="without-margin-bottom">SIT TOWER<br /> DUBAI SILICON OASIS, UAE</p>
 
 				</div>
 
 				<div class="contact-detail-single">
 
 					<h3><i class="fa fa-envelope-o"></i> Contact details</h3>
-					<p>E-mail address: <br /><a href="#">contact@insuranceagency.com</a></p>     
+					<p>E-mail address: <br /><a href="#">Shubham@sarvah.com</a></p>     
 					<p class="without-margin-bottom"><button class="button button-navy-blue" data-action="show-contact-popup">Contact us! <i class="fa fa-paper-plane-o"></i></button></p>
 
 				</div>
 
 				<div class="contact-detail-single contact-detail-single-last">
 
-					<h2>(+123) 456 789 000</h2> 
-					<p class="without-margin-bottom">Available 8:00am - 4:00pm</p> 
+					<h2>+971 4333 8248</h2> 
+					<p class="without-margin-bottom">Available 8:00am - 6:00pm</p> 
 
 				</div>
 
@@ -1751,7 +1514,7 @@
 
 	</section>
 
-	<footer>
+	<!--footer>
 
 		<div class="center">
 
@@ -1810,7 +1573,7 @@
 
 			<ul class="right">
 
-				<li>Copyright &copy; 2015 <span class="divider">&middot;</span> <a href="/index.html">Insurance Agency</a></li>
+				<li>Copyright &copy; 2015 <span class="divider">&middot;</span> <a href="/index.html">SARVAH TECHNOLOGY SOLUTIONS</a></li>
 				<li><div class="fb-like" data-href="https://www.facebook.com/envato" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></li>
 
 			</ul>
@@ -1820,103 +1583,512 @@
 
 		</div>
 
-	</footer>
+	</footer-->
 
-<!--
-facebook SDK
--->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_libs/jquery.js"></script>
+<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/libs/jquery.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCbTg-93_C5kYPJ-2gMc9MzfLND9JGY0WI&sensor=false"></script>
+<!--script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/js/mapgoogle.js"></script-->
 
-<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
-<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_libs/no-ui-slider/jquery.nouislider.all.min.js"></script>
-<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_libs/smoothscroll.js"></script>
-<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_libs/parallax.js"></script>
-<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/_js/functions3.js"></script>
+<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/libs/no-ui-slider/jquery.nouislider.all.min.js"></script>
+<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/libs/smoothscroll.js"></script>
+<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/libs/parallax.js"></script>
+
+<script src="https://rawgit.com/agthumbi/agthumbi.github.io/master/_assets/js/functions13.js"></script>
 <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="541986652926-u5j0qhi6la6uv8h62f6qdunts0744e47.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/api.js"></script>
 <script>
-    $(document).ready(function () {
-
-        // SECONDARY HEALTH INSURANCE FORM MANAGER
-        var counter = 1
-        $(".addMember").click(function (evt) {
-
-            if (counter > 5) {
-                alert('Only Maximum of 5 members allowed');
-                return;
-            }
-
-            if ($("#health_insurance_secondary_form").hasClass("shown")) {
-                var newMemberHTML = $(".new-member-container").html();
-                $("#health_insurance_secondary_form .more-members").append(newMemberHTML);
-                console.log(counter);
-                counter++;
-            }
-
-            if ($("#health_insurance_secondary_form").hasClass("hidden")) {
-                $("#health_insurance_primary_form").addClass("animated fadeOut").css("display", "none");
-                $("#health_insurance_secondary_form").removeClass("hidden").addClass("shown animated fadeInLeft").css("display", "block");
-            }
 
 
+      function start() {
+	
+        gapi.client.init({
+          'apiKey': 'AIzaSyBCreQNC_UCoupii9Vhtd55DY10ygYafrk',
+          'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/translate/v2/rest'],
+        }).then(function() {
+		
+			client.isSignedIn.listen(onSignIn);
+               var button = document.querySelector('.login-form-content #signInButton');
+                button.addEventListener('click', function() {
+                  client.signIn();
+                });
+              
+          gapi.auth.checkSessionState({session_state: null}, function(isUserNotLoggedIn){
+			 
+    if (isUserNotLoggedIn) {
+   //checkLoginState();
+  
+    }
+	
+		  })
+        }).then(function(resp) {
+          console.log(resp.result.data.translations[0].translatedText);
+        }, function(reason) {
+          //console.log('Error: ' + reason.result.error.message);
         });
-        $(".addDocument").click(function (evt) {
-
-            if (counter > 3) {
-                alert('Only Maximum of 4 members allowed');
-                return;
-            }
-            //alert($(".new-member-container").hasClass("shown"));
-           // if ($(".new-member-container").hasClass("shown")) {
-                var newMemberHTML = $(".new-document-container").html();
-               
-                $(".more-document").append(newMemberHTML);
-                console.log(counter);
-                counter++;
-            //}
-
-            //            if ($("#dash_secondary_from").hasClass("hidden")) {
-            //                $("#dash_primary_from").addClass("animated fadeOut").css("display", "none");
-            //                $("#dash_secondary_from").removeClass("hidden").addClass("shown animated fadeInLeft").css("display", "block");
-            //            }
+		
+	
+      };
+      gapi.load('client', start);
 
 
-        });
-
-        $(".goBack").click(function () {
-            $("#health_insurance_secondary_form").addClass("hidden").removeClass('shown').css("display", "none");
-            $("#health_insurance_primary_form").removeClass("hidden").removeClass('fadeOut').addClass('fadeInLeft').css('display', 'block');
-        });
 
 
-        // IN_INSURED CHECKBOX EFFECT
 
-        $(".is_insured").click(function () {
-            var is_checked = $(this).data('checked');
-            if (is_checked == 'yes') {
-                $(".quote-form-company-name").css("display", "block");
-            }
-            else {
-                $(".quote-form-company-name").css("display", "none");
-            }
-        });
 
-        $('#GetQuote').click(function (e) {
-
-            e.preventDefault(e);
-            // alert($('#healthform').serialize());
-            //health_insurance_primary_form
-        });
-
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      alert('You have signed out.');
     });
-</script>
+  }
+function onSignIn(googleUser) {
+	
+  var profile = googleUser.getBasicProfile();
+  if(!isLogin){
+  
+  /*console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail());*/
+ 
+  $('#cname').html(profile.getName());
+	  $('#cemail').html(profile.getEmail());
+	  $('.custom-checkbox #cemail').val(profile.getEmail());
+	  $('.custom-checkbox #cname').val(profile.getName());
+var details={email:profile.getEmail(),name:profile.getName()};
+   var values={id:profile.getEmail(),userid:profile.getId(),name:profile.getName()};
+if(files_data!='')
+   $.uploadProfile(details);
+    alert( 'Thanks for logging in, ' + profile.getName() + '!');
+ isLogin=true;
+   $('*[data-action="show-login-popup"]').hide();
+   $('*[data-action="show-logout"]').attr("id","gologout");
+    $('*[data-action="show-logout"]').show();
+  
+ 
+  $.ajax({
+	 type: "POST",
+	 data:values,
+  url: "CustomerProfile.php",
+  
+  cache: false,
+  success: function(data){
+	  
+  var resp=JSON.parse(data);
+  
+  var doc1=resp.doc1==null?"No Document":resp.doc1;
+  var doc2=resp.doc2==null?"No Document":resp.doc2;
+  var doc3=resp.doc3==null?"No Document":resp.doc3;
+  var photo=resp.photo==null?"No Document":resp.photo;
+  $("#doc1").html('DL:'+doc1);
+  
+  $("#doc2").html('Mulkiya:'+doc2);
+  $("#doc3").html('Emirates ID:'+doc3);
+  $("#custref").html(resp.row);
+ 
+ 
+  $("#doc1").attr("href",$("#doc1").attr("href")+doc1);
+  $("#doc2").attr("href",$("#doc2").attr("href")+doc2);
+  $("#doc3").attr("href",$("#doc3").attr("href")+doc3);
+  $(".passport").attr("src","uploads/"+photo);
+
+   $('*[data-action="show-client-popup"]').show();
+  
+      
+        var quoteKey = "car-insurance";
+         $.martanianShowClientPopup(quoteKey);
+  $.martanianHideQuotePopup();
+   $.martanianHideLoginPopup();
+  }
+});
+  }
+}
+	$(document).ready(function() {
+
+	
+	//initClient();
+// SECONDARY HEALTH INSURANCE FORM MANAGER
+var counter = 1
+
+$(".addMember").click(function(evt){
+
+	if(counter > 4){
+		alert('Only Maximum of 5 members allowed');
+		return;
+	}
+
+	if($("#health_insurance_secondary_form").hasClass("shown"))
+	{
+		var newMemberHTML = $(".new-member-container").html();
+		$("#health_insurance_secondary_form .more-members").append(newMemberHTML);
+		console.log(counter);
+		counter++;
+	}
+
+	if($("#health_insurance_secondary_form").hasClass("hidden"))
+	{
+		$("#health_insurance_primary_form").addClass("animated fadeOut").css("display", "none");
+		$("#health_insurance_secondary_form").removeClass("hidden").addClass("shown animated fadeInLeft").css("display", "block");
+	}
+
+
+});
+
+$(".goBack").click(function(){
+	$("#health_insurance_secondary_form").addClass("hidden").removeClass('shown').css("display", "none");
+	$("#health_insurance_primary_form").removeClass("hidden").removeClass('fadeOut').addClass('fadeInLeft').css('display', 'block');
+});
+
+
+// IN_INSURED CHECKBOX EFFECT
+
+$(".is_insured").click(function(){
+	var is_checked = $(this).data('checked');
+	if(is_checked == 'yes')
+	{
+		$(".quote-form-company-name").css("display","block");
+	}
+	else
+	{
+		$(".quote-form-company-name").css("display","none");
+	}
+});
+
+// SEND QUOTE NEXT MODAL VIEW
+$(".send-quote").click(function(){
+	$(".send-qoute-next").css("opacity", 1).addClass("shown");
+	$(".send-qoute-next").click();
+});
+
+$('#contactus').click(function(){
+
+$('#quote-popup-background').hide();
+$('#quote-popup-content').css("top","-10000px");
+$('#quote-popup-content').css("margin-top","0px");
+$('#quote-popup-content').css("height","-10000px");
+$('#quote-popup-content').css("position","absolute");
+
+$('#quote-form').hide();
+
+});
+
+$('#contact-popup-close').click(function(){
+$('#quote-popup-content').css("top","");
+$('#quote-popup-content').css("height","");
+
+
+});
+$( document ).ready(function() {
+    
+	//checkLoginState();
+	
+});
+
+$(".addProfile").click(function (evt) {
+		evt.preventDefault();
+		
+		 
+			
+	 var file_data = $('#file1').prop('files')[0];
+	  var file_data1 = $('#file2').prop('files')[0];  
+	   var file_data2 = $('#file3').prop('files')[0];  
+	   
+	    files_data={file1:file_data,file2:file_data2,file3:file_data2};
+	
+if(!isLogin){
+	
+	//alert("Sign in to activate your dashboard");
+	$('#uploadfrm').hide();
+	$('#loginP').show();
+	
+	//fb_login();
+}
+else{
+	var details={name:$('#cname').val(),email:$('#cemail').val()}
+    $.uploadProfile(details);
+}
+
+
+        });
+		
+		$('#photofile')
+		.change(function(){
+		  $('.passport').attr("src","uploads/"+this.files[0].name);
+			var file_data = this.files[0];
+			
+			  var form_data = new FormData();                  
+    form_data.append('file', file_data);
+
+   var collect={emailaddress:$('#cemail').html(),photo:file_data.name};
+ 
+  
+   $.ajax({
+                url: 'test1.php', // point to server-side PHP script 
+           
+               
+                data: collect,                         
+                type: 'post',
+                success: function(php_script_response){
+                    alert(php_script_response); // display response from the PHP script, if any
+					$('#uploadP').html('We will send you a quote withinan hours time');
+                }
+     });
+	  $.ajax({
+                url: 'test1.php', // point to server-side PHP script 
+                dataType: 'text',  // what to expect back from the PHP script, if anything
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                type: 'post',
+                success: function(php_script_response){
+                    //alert(php_script_response); // display response from the PHP script, if any
+                }
+     });
+		});
+		/*$( document ).ready ( function (){
+			
+			$.ajax({
+			url:"session.php",
+			type:"POST",
+			cache:false,
+			
+			success:function(data){
+				alert(data)
+			}
+			
+			
+			})
+		});*/
+$('#GetQuote1').click(function(){
+
+$('#uploadfrm #mobileno').val($('#mobileno').val());
+$('#uploadfrm #cemail').val($('#healthform #cemail').val());
+$.ajax({
+	 type: "POST",
+  url: "sendmail.php",
+  data:$('#healthform').serialize()+'&insure=Health',
+  cache: false,
+  success: function(html){
+  
+  
+
+  }
+});
+});
+$('#GetQuote').click(function(){
+
+$('#uploadfrm #mobileno').val($('#mobileno').val());
+$('#uploadfrm #cemail').val($('#insureform #cemail').val());
+//$('#insureform input').each(function(){
+	
+	//alert($('input[name='+this.name+']'))
+	//if(this.value==''){
+		//$('input[name='+this.name+']').addClass('error');
+	//return;
+	//}
+	//else
+		//$('input[name='+this.name+']').removeClass('error');
+	
+	
+	//});
+	//return;
+$.ajax({
+	 type: "POST",
+  url: "sendmail.php",
+  data:$('#insureform').serialize()+'&insure=Car',
+  cache: false,
+  success: function(html){
+  
+  
+
+  }
+});
+
+ 
+
+
+
+});
+  $('#custref').change(function(){
+	
+	   var value={refz:this.value};
+	   $('#docs>*').remove();
+	   $.ajax({
+                url: 'getDocuments.php', // point to server-side PHP script 
+           
+               
+                data: value,                         
+                type: 'post',
+                success: function(data){
+					var htmls=JSON.parse(data);
+					$('#docs').html(htmls);
+                    // display response from the PHP script, if any
+					//$('#uploadP').html('We will send you a quote withinan hours time');
+                }
+     });
+	   
+	   
+	   
+	   })
+
+
+
+});
+function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 50,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSignIn,
+        'onfailure': onFailure
+		
+      });
+	  gapi.signin2.render('my-signin3', {
+        'scope': 'profile email',
+        'width': 50,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSignIn,
+        'onfailure': onFailure
+		
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+  <script>
+   (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+	
+function ckLogin() {
+	loginFirst=true;
+	
+	fb_login();
+	
+}
+ 
+function fb_login() {
+    FB.login( function() {
+			checkLoginState();
+		
+	}, { scope: 'email,public_profile' } );
+
+}
+
+function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+	 if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+	
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+     // document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+	  //window.location.href ='/';
+	 // alert("Please try again.Please log into Facebook");
+     //document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+    }
+  }
+  
+  function testAPI() {
+	  
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', { fields: 'name, email' }, function(response) {
+	
+$.martanianHideLoginPopup();
+ $('*[data-action="show-login-popup"]').hide();
+ $('*[data-action="show-logout"]').attr("id","fblogout");
+ $('*[data-action="show-logout"]').show();
+ $('*[data-action="show-client-popup"]').show();
+  
+      
+        var quoteKey = "car-insurance";
+        if (typeof quoteKey != 'undefined' && quoteKey !== false) $.martanianShowClientPopup(quoteKey);
+		
+		
+   if(loginFirst){
+ 
+ loginFirst=false;
+   }
+   else{
+	   $.uploadProfile(response);
+   }
+		
+      //console.log('Successful login for: ' + response.name);
+	  alert( 'Thanks for logging in, ' + response.name + '!');
+	  isLogin=true;
+	  $('#cname').html(response.name);
+	  $('#cemail').html(response.email);
+	  $('.custom-checkbox #cemail').val(response.email);
+	  $('.custom-checkbox #cname').val(response.name);
+	  
+	  var values={id:response.email,userid:response.id,name:response.name};
+	 $.ajax({
+	 type: "POST",
+	 data:values,
+  url: "CustomerProfile.php",
+  
+  cache: false,
+  success: function(data){
+	  
+  var resp=JSON.parse(data);
+  
+  var doc1=resp.doc1==null?"No Document":resp.doc1;
+  var doc2=resp.doc2==null?"No Document":resp.doc2;
+  var doc3=resp.doc3==null?"No Document":resp.doc3;
+  var photo=resp.photo==null?"No Document":resp.photo;
+  $("#doc1").html(doc1);
+  
+  $("#doc2").html(doc2);
+  $("#doc3").html(doc3);
+ 
+  $("#doc1").attr("href",$("#doc1").attr("href")+doc1);
+  $("#doc2").attr("href",$("#doc2").attr("href")+doc2);
+  $("#doc3").attr("href",$("#doc3").attr("href")+doc3);
+  $(".passport").attr("src","uploads/"+photo);
+  
+  $.martanianHideQuotePopup();
+  }
+});
+	   //window.location.href = "http://9893fc91.ngrok.io/admin.php";
+     // document.getElementById('status').innerHTML =
+       // 'Thanks for logging in, ' + response.name + '!';
+	 
+    });
+  }
+  </script>
 </body>
 </html>
